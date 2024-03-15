@@ -1,1 +1,1 @@
-#REPOSITÓRIO PARA MATERIA DE PROGRAMAÇÃO WEB DA MINHA FACULDADE
+Repositório para matéria de programação web da minha faculdade
