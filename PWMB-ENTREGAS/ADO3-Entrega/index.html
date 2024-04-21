@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>ADO 3</title>
+  </head>
+  <body>
+    <span>Verificador de Idade</span>
+
+    <main>
+      <div class="content">
+        <div>
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade" />
+        </div>
+        <div id="inputs">
+          <span>Sexualidade:</span>
+          <label for="sexoM">Masculino</label>
+          <input type="radio" name="sexo" id="sexoM" class="masc"/>
+          <label for="sexoF">Feminino</label>
+          <input type="radio" name="sexo" id="sexoF" class="fem"/>
+        </div>
+        <button type="submit" id="submit">Verificar</button>
+        <div id="resultDiv">
+          <span id="result">.</span>
+          <img src="./Screenshot_4.png" alt="" id="img"/>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
