@@ -1,6 +1,8 @@
 let numeros = []
+const btnIncluir = document.getElementById('incluir')
+const btnFinalizar = document.getElementById('finalizar')
 
-function incluirNumero() {
+btnIncluir.addEventListener('click', () => {
   const numeroInput = document.getElementById('numero')
   const numero = parseInt(numeroInput.value)
 
@@ -16,9 +18,9 @@ function incluirNumero() {
   const option = document.createElement('option')
   option.text = `Valor ${numero} adicionado`
   selectNumeros.add(option)
-}
+})
 
-function finalizar() {
+btnFinalizar.addEventListener('click', () => {
   if (numeros.length === 0) {
     alert('Adicione valores antes de finalizar')
     return
@@ -37,4 +39,4 @@ function finalizar() {
     <p>A soma dos valores é ${somaValores}</p>
     <p>A média dos valores informados é ${mediaValores.toFixed(2)}</p>
   `
-}
+})
