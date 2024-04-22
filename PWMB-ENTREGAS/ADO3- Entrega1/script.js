@@ -8,6 +8,7 @@ submit.addEventListener('click', () => {
   const anoNascimento = data.getFullYear() - idade.value
   let sexoMasc = document.getElementById('sexoM')
   let sexoFem = document.getElementById('sexoF')
+  const genero = sexoMasc.checked ? 'M' : 'F'
   result.innerHTML = `Você nasceu em ${anoNascimento}`
 
   if (sexoMasc.checked && sexoMasc.classList.contains('masc')) {
@@ -17,12 +18,12 @@ submit.addEventListener('click', () => {
   }
 
   if (idade.value <= 10) {
-    img.src = 'imgs/Crianca.png'
+    img.src = `imgs/Crianca${genero}.jpg`
   } else if (idade.value <= 20) {
-    img.src = 'imgs/Jovem.jpg'
+    img.src = `imgs/Jovem${genero}.jpg`
   } else if (idade.value <= 50) {
-    img.src = 'imgs/Adulto.jpg'
+    img.src = `imgs/Adulto${genero}.jpg`
   } else {
-    img.src = 'imgs/Idoso.jpg'
+    img.src = `imgs/Idoso${genero}.jpg`
   }
 })
