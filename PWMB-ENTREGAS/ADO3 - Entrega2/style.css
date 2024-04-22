@@ -6,20 +6,23 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
-body {
-  font-family: Arial, sans-serif;
+
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: #0093e9;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
-main {
+.container {
   display: flex;
+  gap: 10px;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 3px solid blueviolet;
   height: 600px;
   width: 700px;
@@ -28,27 +31,11 @@ main {
   background-color: white;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 600px;
+#resultado{
+    margin-top: 30px;
+    padding: 10px;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
 }
 
-#resultDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: fit-content;
-}
 
-#img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-}
