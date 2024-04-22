@@ -1,7 +1,7 @@
 let numeros = []
 const btnIncluir = document.getElementById('incluir')
 const btnFinalizar = document.getElementById('finalizar')
-
+const txtArea = document.getElementById('txtArea')
 btnIncluir.addEventListener('click', () => {
   const numeroInput = document.getElementById('numero')
   const numero = parseInt(numeroInput.value)
@@ -14,10 +14,10 @@ btnIncluir.addEventListener('click', () => {
   }
 
   numeros.push(numero)
-  const selectNumeros = document.getElementById('numeros')
   const option = document.createElement('option')
   option.text = `Valor ${numero} adicionado`
-  selectNumeros.add(option)
+
+  txtArea.value += "\n " + option.text
 })
 
 btnFinalizar.addEventListener('click', () => {
