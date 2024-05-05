@@ -3,16 +3,13 @@ const btn = document.getElementById('btn')
 const clear = document.getElementById('clear')
 let change = false
 const filmes = [
-  'Harry Potter',
-  'Senhor dos Anéis',
-  'Star Wars',
-  'Matrix',
-  'Vingadores',
-  'Velozes e Furiosos',
-  'Jurassic Park',
-  'Piratas do Caribe',
-  'O Rei Leão',
-  'Toy Story',
+  'Os Sete Samurais (1954)',
+  'Bonnie e Clyde - Uma Rajada de Balas (1967)',
+  'Apertem os Cintos. . . O Piloto Sumiu (1980)',
+  'Outor Jivago (1965)',
+  'Contatos Imediatos de Terceiro Grau (1977)',
+  'Quem Quer Ser um Milionário? (2008)',
+  'A Ponte do Rio Kwai (1957)',
 ]
 
 btn.addEventListener('click', () => {
