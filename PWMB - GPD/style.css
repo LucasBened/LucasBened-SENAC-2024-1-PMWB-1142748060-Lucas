@@ -7,18 +7,24 @@
   box-sizing: border-box;
 }
 
-header {
+body {
+}
+
+
+.header {
   padding: 10px;
   display: flex;
   padding: 30px 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
+  background-color: white;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -26,20 +32,26 @@ a {
   text-decoration: none;
   color: black;
   border-bottom: 1px solid transparent;
-  border-radius: 10px;
-  padding: 5px;
-  transition: 0.5s;
+  transition: all 0.6s;
 }
+
 a:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid green;
 }
 
 ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 51px;
   justify-content: center;
+}
+
+hr{
+  width: 500px;
+  border: 1px solid #1c2833;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .logo {
@@ -47,18 +59,97 @@ ul {
   font-weight: 700;
 }
 
-.mainImg {
-  position: relative;
-  width: 100%;
+.hero {
+  background-image: url(./img/bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 500px;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   color: white;
-  z-index: 1;
-  position: absolute;
-  top: 20%;
-  left: 30%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.focusSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+  height: 1220px;
+}
+
+.focusDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  background-color: #1c2833;
+  border-radius: 10px;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.focusTexts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  width: 400px;
+  margin: 30px;
+}
+
+.focusTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.focusTexts {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.focusImg {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+
+.focusImg:hover {
+  transform: scale(1.1);
+}
+
+.graphSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.grafico{ 
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.graphSection span{
+  font-size: 1.5rem;
+  font-weight: 700;
 }

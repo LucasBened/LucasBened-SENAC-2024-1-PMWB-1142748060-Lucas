@@ -5,30 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Análise de dados para Gestão de Pragas e Doenças</title>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <span class="logo">GPD</span>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Suporte</a></li>
-          <li><a href="#">Soluções</a></li>
-          <li><a href="#">Saúde</a></li>
-          <li><a href="#">Agricultura</a></li>
+          <li><a href="#">Nosso Foco</a></li>
+          <li><a href="#">Saúde e Agricultura</a></li>
+          <li><a href="#">Contate</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div>
+      <header class="hero">
         <h1>Moldando o Futuro da Saúde e da Agricultura</h1>
-        <img
-          src="https://iha.tamu.edu/wp-content/uploads/sites/18/2022/08/AdobeStock_450222269-min-2048x983.jpeg"
-          alt=""
-          class="mainImg"
-        />
-      </div>
+      </header>
+      <hr />
+      <section class="focusSection">
+        <h2>Nosso Foco</h2>
+        <div class="focusDiv">
+          <div class="focusTexts">
+            <span class="focusTitle">Clima</span>
+            <span class="focusText">
+              Produção de alimentos e nutrição resilientes ao clima, utilizando
+              e conservando uma paisagem saudável e ecossistemas em pleno
+              funcionamento.</span
+            >
+          </div>
+          <img src="./img/clima.jpg" alt="" class="focusImg" />
+        </div>
+        <div class="focusDiv">
+          <img src="./img/saude1.jpg" alt="" class="focusImg" />
+          <div class="focusTexts">
+            <span class="focusTitle">Segurança dos Alimentos</span>
+            <span class="focusText">
+              Ajudando as pessoas a obter acesso a alimentos suficientes,
+              seguros e nutritivos. Auxiliando os agricultores a produzir mais e
+              a perder menos para pragas e doenças. Apoiando o acesso dos
+              agricultores aos mercados e soluções positivas para a natureza na
+              produção e proteção de cultivos.</span
+            >
+          </div>
+        </div>
+        <div class="focusDiv">
+          <div class="focusTexts">
+            <span class="focusTitle">Biodiversidade</span>
+            <span class="focusText">
+              Desenvolvendo soluções baseadas na natureza, incluindo soluções de
+              controle biológico, para pragas e doenças que minimizam danos
+              ambientais, auxiliando na proteção e restauração dos ecossistemas
+              globais e da biodiversidade.</span
+            >
+          </div>
+          <img src="./img/bio.jpg" alt="" class="focusImg" />
+        </div>
+        <div class="focusDiv">
+          <img src="./img/gestao.jpg" alt="" class="focusImg" />
+          <div class="focusTexts">
+            <span class="focusTitle">Gestão e Cuidado com Pragas</span>
+            <span class="focusText">
+              Aplicando métodos de controle de pragas para proteger colheitas e
+              garantir a segurança alimentar de forma sustentável. Integrando
+              abordagens eficazes para minimizar danos ambientais e maximizar a
+              produtividade agrícola.</span
+            >
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="graphSection">
+        <span>Saúde e Agricultura</span>
+        <div class="grafico">
+          <div id="regions_div" style="width: 700px; height: 500px"></div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
