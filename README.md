@@ -23,7 +23,7 @@ O projeto consiste em quatro arquivos principais:
 - `index.html`: Este é o arquivo principal que contém a estrutura HTML da página.
 - `style.css`: Este arquivo contém todos os estilos CSS usados no projeto.
 - `script.js`: Este arquivo contém todo o código JavaScript usado para buscar os dados e criar os gráficos.
-- Criar o banco de dados dadosgestao e alimenta-lo com o script que esta no repositório
+- `pmwb.sql` Criar o banco de dados dadosgestao e alimenta-lo com o script que esta no repositório
 - `server.js`: Este é o arquivo do servidor, necessário usar um node script.js para que funcione corretamente.
   
 ## Funcionalidades
