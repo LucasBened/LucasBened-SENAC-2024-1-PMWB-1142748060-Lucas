@@ -13,9 +13,9 @@ button.addEventListener('click', () => {
   let li = document.createElement('li')
 
   tarefas.forEach(tarefa => {
-    li.innerHTML = `${tarefa.tarefa} - não concluída`
+    li.innerHTML = `${tarefa.tarefa} - ${tarefa.concluida}`
     lista.appendChild(li)
-    console.log(tarefas)
+    console.log(tarefas)  
   })
 
   console.log(tarefas)
