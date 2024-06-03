@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(120deg, #88fa84 30%, #8fb2f4 100%);
+  background-repeat: no-repeat;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  padding: 30px 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid transparent;
+  transition: all 0.6s;
+}
+
+a:hover {
+  border-bottom: 1px solid green;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 51px;
+  justify-content: center;
+}
+
+hr {
+  width: 500px;
+  border: 1px solid #1c2833;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url(./img/bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h2 {
+  color: white;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.focusSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+  height: 1220px;
+}
+
+.focusDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  background-color: #1c2833;
+  border-radius: 10px;
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: 0.1px 1.3px 2.7px rgba(0, 0, 0, 0.056),
+    0.2px 3.3px 6.9px rgba(0, 0, 0, 0.08), 0.4px 6.7px 14.2px rgba(0, 0, 0, 0.1),
+    0.7px 13.9px 29.2px rgba(0, 0, 0, 0.124), 2px 38px 80px rgba(0, 0, 0, 0.18);
+}
+
+.focusTexts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  width: 400px;
+  margin: 30px;
+}
+
+.focusTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.focusTexts {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.focusImg {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+
+.focusImg:hover {
+  transform: scale(1.1);
+}
+
+.graphSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.grafico {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.graphSection span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.graphBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.graphBox span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.graphs {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0.1px 1.3px 2.7px rgba(0, 0, 0, 0.146),
+    0.2px 3.3px 6.9px rgba(0, 0, 0, 0.209),
+    0.4px 6.7px 14.2px rgba(0, 0, 0, 0.261),
+    0.7px 13.9px 29.2px rgba(0, 0, 0, 0.324), 2px 38px 80px rgba(0, 0, 0, 0.47);
+  margin-bottom: 30px;
+  background-color: #1c2833;
+}
+
+.horizontal {
+  height: 300px;
+  width: 1px;
+  border: 1px solid white;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 5);
+}
+
+.saudeAgr {
+  font-size: 1.2rem;
+  font-weight: 600;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+#res {
+  color: rgb(126, 253, 109);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+#reg {
+  color: rgb(253, 109, 109);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
