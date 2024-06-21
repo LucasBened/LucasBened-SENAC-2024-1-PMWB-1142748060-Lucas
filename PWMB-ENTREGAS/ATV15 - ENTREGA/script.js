@@ -1,4 +1,4 @@
-const API_KEY = 'f9d3ecdd730fe37596cde8d987f4f9a2'
+const API_KEY = 
 const BASE_URL = 'https://api.themoviedb.org/3'
 
 document.addEventListener('DOMContentLoaded', () => {
